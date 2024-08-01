@@ -1,4 +1,3 @@
-
 import { Routes, Route } from 'react-router-dom';
 import './index.css';
 import Layout from './components/Layout';
@@ -18,6 +17,7 @@ import FlashScreen from './components/FlashScreen';
 export default function App() {
   const [showFlashScreen, setShowFlashScreen] = useState(true);
   const [isAuthenticated, setIsAuthenticated] = useState(false);
+  const [userId, setUserId] = useState('user123'); // Replace with actual user ID logic
 
   if (showFlashScreen) {
     return <FlashScreen onFlashEnd={() => setShowFlashScreen(false)} />;
@@ -34,7 +34,7 @@ export default function App() {
           <Route index element={<Introduction />} />
           <Route path="calendar" element={<Calendar />} />
           <Route path="reproductive-health" element={<ReproductiveHealth />} />
-          <Route path="information" element={<Information />} />
+          <Route path="information/*" element={<Information userId={userId} />} />
           <Route path="profile" element={<Profile />} />
           <Route path="*" element={<NotFound />} />
         </Route>

@@ -22,6 +22,9 @@ function Layout() {
             <Link to="/information">Information</Link>
           </div>
           <div className="px-5 py-3 rounded-xl bg-sky-300 w-max font-medium">
+            <Link to="/Quiz">Quiz</Link>
+          </div>
+          <div className="px-5 py-3 rounded-xl bg-sky-300 w-max font-medium">
             <Link to="/profile">Profile</Link>
           </div>
         </div>

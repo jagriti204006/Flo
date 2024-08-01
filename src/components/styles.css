@@ -1,0 +1,37 @@
+.quiz-container {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+  }
+  
+  .question {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .question:last-child {
+    border-bottom: none;
+  }
+  
+  .question p {
+    margin-bottom: 8px;
+  }
+  
+  label {
+    display: flex;
+    align-items: center;
+    margin-bottom: 4px;
+  }
+  
+  input[type="radio"] {
+    margin-right: 8px;
+  }
+  
+  button {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
