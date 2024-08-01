@@ -1,0 +1,30 @@
+.reproductive-health {
+    background-color: rgb(255, 192, 243);
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+  }
+  
+  .reproductive-health h2 {
+    margin-top: 20px;
+    color: #0c0c0c;
+  }
+  
+  .reproductive-health p {
+    margin: 10px 0;
+    color: #090909;
+  }
+  
+  .reproductive-health ul {
+    list-style-type: disc;
+    margin-left: 20px;
+  }
+  
+  .reproductive-health ul li {
+    margin: 5px 0;
+  }
+  
+  .reproductive-health section {
+    margin-bottom: 20px;
+  }
+  

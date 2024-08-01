@@ -1,0 +1,31 @@
+
+.introduction {
+    background-color: rgb(255, 192, 243);
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+  }
+  
+  .introduction h2 {
+    margin-top: 20px;
+    color: #0f0f0f;
+  }
+  
+  .introduction p {
+    margin: 10px 0;
+    color: #0c0c0c;
+  }
+  
+  .introduction ul {
+    list-style-type: disc;
+    margin-left: 20px;
+  }
+  
+  .introduction ul li {
+    margin: 5px 0;
+  }
+  
+  .introduction section {
+    margin-bottom: 20px;
+  }
+  

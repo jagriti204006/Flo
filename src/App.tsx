@@ -13,7 +13,7 @@ import ReproductiveHealth from './components/ReproductiveHealth';
 import Information from './components/Information';
 import Profile from './components/Profile';
 import FlashScreen from './components/FlashScreen';
-//import LoginRegister from './components/LoginRegister';
+import LoginRegister from './components/LoginRegister';
 
 export default function App() {
   const [showFlashScreen, setShowFlashScreen] = useState(true);
@@ -23,9 +23,9 @@ export default function App() {
     return <FlashScreen onFlashEnd={() => setShowFlashScreen(false)} />;
   }
 
-  // if (!isAuthenticated) {
-  //   return <LoginRegister onLogin={() => setIsAuthenticated(true)} />;
-  // }
+  if (!isAuthenticated) {
+    return <LoginRegister onLogin={() => setIsAuthenticated(true)} />;
+  }
 
   return (
     <PrimeReactProvider>
