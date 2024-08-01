@@ -7,7 +7,7 @@ const cors = require('cors');
 
 const app = express();
 const PORT = process.env.PORT || 5000;
-const MONGO_URI = 'mongodb+srv://omkaar1432:omkar11@omkar11.s0uuwkl.mongodb.net/?retryWrites=true&w=majority&appName=omkar11';
+const MONGO_URI = 'mongodb+srv://malhotrajagriti8:Jagriti123@cluster0.d4qfcbf.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0';
 const JWT_SECRET = 'your_jwt_secret';
 
 app.use(cors());
