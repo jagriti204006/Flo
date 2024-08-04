@@ -33,7 +33,7 @@ const LoginRegister: React.FC<LoginRegisterProps> = ({ onLogin }) => {
 
   return (
     <div className="login-register">
-      <h2>{isLogin ? 'Login' : 'Register'}</h2>
+      <h2>{isLogin ? 'Sign in' : 'Sign Up'}</h2>
       <form onSubmit={handleSubmit}>
         <input
           type="email"
@@ -52,10 +52,10 @@ const LoginRegister: React.FC<LoginRegisterProps> = ({ onLogin }) => {
           required
         />
         {/* Add other input fields as necessary */}
-        <button type="submit">{isLogin ? 'Login' : 'Register'}</button>
+        <button type="submit">{isLogin ? 'Sign In' : 'Sign Up'}</button>
       </form>
       <button onClick={() => setIsLogin(!isLogin)}>
-        {isLogin ? 'Switch to Register' : 'Switch to Login'}
+        {isLogin ? 'Don\'t have an account? Sign Up.' : 'Have an account? Sign in.'}
       </button>
     </div>
   );

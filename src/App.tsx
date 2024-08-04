@@ -23,9 +23,9 @@ export default function App() {
     return <FlashScreen onFlashEnd={() => setShowFlashScreen(false)} />;
   }
 
-  if (!isAuthenticated) {
-    return <LoginRegister onLogin={() => setIsAuthenticated(true)} />;
-  }
+  // if (!isAuthenticated) {
+  //   return <LoginRegister onLogin={() => setIsAuthenticated(true)} />;
+  // }
 
   return (
     <PrimeReactProvider>
