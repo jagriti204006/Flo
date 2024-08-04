@@ -79,8 +79,10 @@ import './Introduction.css';
 const Introduction: React.FC = () => {
   return (
     <div className="introduction-page">
+      <div className="intro1">
       <div className="hero-section">
-        <h1>What is Periods?</h1>
+        {/* <h1>What is Periods?</h1> */}
+      </div>
       </div>
 
       <section className="content-section">
@@ -100,6 +102,9 @@ const Introduction: React.FC = () => {
           ))}
         </div>
       </section>
+
+   
+
 
       <section className="content-section">
         <h2>Why are tweens getting periods early?</h2>
