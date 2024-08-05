@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #a6c3e0;
+  color: #333;
+}
+
+.quiz-container {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 30px;
+  background-color: #e19797;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.quiz-title {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #2c3e50;
+}
+
+.question-container {
+  margin-bottom: 30px;
+}
+
+.question {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: #34495e;
+}
+
+.options-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.option {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.option input[type="radio"] {
+  margin-right: 10px;
+}
+
+.option-text {
+  font-size: 16px;
+}
+
+.start-button, .next-button {
+  background-color: #3498db !important;
+  color: #040404 !important;
+  border: none;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.start-button {
+  display: block;
+  margin: 0 auto;
+}
+
+.next-button {
+  float: right;
+}
+
+.start-button:hover, .next-button:hover {
+  background-color: #2980b9;
+}

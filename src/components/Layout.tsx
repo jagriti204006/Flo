@@ -47,12 +47,13 @@
 
 import React from 'react';
 import { Outlet, Link, useLocation } from 'react-router-dom';
+import './Layout.css';
 
 function Layout() {
   const location = useLocation();
 
   return (
-    <div className="bg-gray-900 min-h-screen font-sans text-white">
+    <div className="bg-gray-900 min-h-screen font-poppins text-white">
       <header className="bg-gray-800 shadow-md">
         <nav className="container mx-auto px-4">
           <ul className="flex justify-end items-center space-x-2 py-4">

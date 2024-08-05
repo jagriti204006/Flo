@@ -84,7 +84,7 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-image: url("D:\SUMMER\Flo\src\images\flash.jpg");
+  background-image: url("D:\SUMMER\Flo\src\images\flash2.jpg");
  
   background-size: cover; /* Ensures the image covers the entire background */
   background-repeat: no-repeat; /* Prevents the image from repeating */
@@ -97,8 +97,9 @@ body {
 .flash-screen h1 {
   font-size: 2.5em;
   margin: 0;
+  color:#ec1073 ;
   padding: 20px;
-  background: rgba(0, 0, 0, 0.3);
+  background: rgba(0, 0, 0, 0.8);
   border-radius: 10px;
 }
 

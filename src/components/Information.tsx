@@ -3,6 +3,7 @@ import { Routes, Route } from 'react-router-dom';
 import Quiz from './Quiz';
 import QuizSummary from './QuizSummary';
 import './styles.css';
+import ChatBox from './ChatBox';
 
 const Information = ({ userId }: { userId: string }) => {
   const [answers, setAnswers] = React.useState<{ [key: string]: string }>({});
@@ -11,6 +12,7 @@ const Information = ({ userId }: { userId: string }) => {
     <div className="p-5">
       <h1 className="text-2xl font-bold mb-4">Information</h1>
       <p className="mb-4">FAQs</p>
+      <ChatBox/>
       <p className="mb-4">Talk to expert/Anonymous talk with</p>
       <Routes>
         <Route path="quiz" element={<Quiz userId={userId} />} />
