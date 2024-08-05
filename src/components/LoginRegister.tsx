@@ -11,7 +11,6 @@ const LoginRegister: React.FC<LoginRegisterProps> = ({ onLogin }) => {
   const [formData, setFormData] = useState({
     email: '',
     password: '',
-    // Add other fields as necessary
   });
 
   const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
@@ -20,7 +19,7 @@ const LoginRegister: React.FC<LoginRegisterProps> = ({ onLogin }) => {
 
   const handleSubmit = async (e: FormEvent) => {
     e.preventDefault();
-    const url = isLogin ? '/api/login' : '/api/register';
+    const url = isLogin ? 'http://localhost:6969/api/login' : 'http://localhost:6969/api/register';
     try {
       const response = await axios.post(url, formData);
       console.log(response.data);
@@ -33,7 +32,7 @@ const LoginRegister: React.FC<LoginRegisterProps> = ({ onLogin }) => {
 
   return (
     <div className="login-register">
-      <h2>{isLogin ? 'Sign in' : 'Sign Up'}</h2>
+      <h2>{isLogin ? 'Sign In' : 'Sign Up'}</h2>
       <form onSubmit={handleSubmit}>
         <input
           type="email"
@@ -51,11 +50,10 @@ const LoginRegister: React.FC<LoginRegisterProps> = ({ onLogin }) => {
           onChange={handleChange}
           required
         />
-        {/* Add other input fields as necessary */}
         <button type="submit">{isLogin ? 'Sign In' : 'Sign Up'}</button>
       </form>
       <button onClick={() => setIsLogin(!isLogin)}>
-        {isLogin ? 'Don\'t have an account? Sign Up.' : 'Have an account? Sign in.'}
+        {isLogin ? 'Don\'t have an account? Sign Up.' : 'Have an account? Sign In.'}
       </button>
     </div>
   );
