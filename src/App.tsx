@@ -12,6 +12,7 @@ import ReproductiveHealth from './components/ReproductiveHealth';
 import Information from './components/Information';
 import Profile from './components/Profile';
 import FlashScreen from './components/FlashScreen';
+import Quiz from './components/Quiz';
 import LoginRegister from './components/LoginRegister';
 
 export default function App() {
@@ -36,6 +37,7 @@ export default function App() {
           <Route path="reproductive-health" element={<ReproductiveHealth />} />
           <Route path="information/*" element={<Information userId={userId} />} />
           <Route path="profile" element={<Profile />} />
+          <Route path="Quiz" element={<Quiz userId={''} />} />
           <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>
