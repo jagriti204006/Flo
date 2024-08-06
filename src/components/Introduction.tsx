@@ -10,17 +10,17 @@ const Introduction: React.FC = () => {
     <div className="introduction-page">
 
       <div className="hero-section">
-        <h1>What is Periods?</h1>
+        <h1>WHAT IS PERIODS ?</h1>
       </div>
 
       <section className="content-section">
         <div className="content-text">
-          <h2>What is Periods/Menstruation?</h2>
+          {/* <h2></h2> */}
           <p>
             Menstruation, also known as a period, is a natural biological process experienced by women and girls. It involves the shedding of the uterine lining, which occurs in a cycle of about 28 days. This process is part of the female reproductive system and signifies that a woman's body is preparing for a potential pregnancy.
           </p>
         </div>
-        <div className="content-image">Image Placeholder</div>
+        <div className="content-image1"></div>
       </section>
 
       <section className="placard-section">
@@ -35,7 +35,7 @@ const Introduction: React.FC = () => {
       </section>
 
       <section className="content-section">
-        <div className="content-image">Image Placeholder</div>
+        <div className="content-image2"></div>
         <div className="content-text">
           <h2>Why are tweens getting periods early?</h2>
           <p>
@@ -55,7 +55,9 @@ const Introduction: React.FC = () => {
 
 
       <h2 className='myH2'>Breaking the Taboos</h2>
+      <div className="image-break"></div>
       <section className="carousel-section">
+      
         <div className="carousel">
           <div className="carousel-item">
             <p>Menstruation is a normal and natural part of life, yet many cultures still view it as a taboo subject.</p>

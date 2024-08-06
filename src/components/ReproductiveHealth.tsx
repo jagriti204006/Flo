@@ -19,7 +19,7 @@ const ReproductiveHealth = () => {
             <li className="fancy-bullet">Avoiding the use of harsh chemicals or douches that can disrupt the natural balance.</li>
           </ul>
         </div>
-        <div className="section-image">Image Placeholder</div>
+        <div className="section-image1"></div>
       </section>
 
       <section>
@@ -35,7 +35,7 @@ const ReproductiveHealth = () => {
             <div className="carousel-item">Regular check-ups</div>
           </div>
         </div>
-        <div className="section-image">Image Placeholder</div>
+        <div className="section-image2">Image Placeholder</div>
       </section>
 
       <section>
@@ -61,7 +61,7 @@ const ReproductiveHealth = () => {
             <p>Such as omega-3 fatty acids for hormone regulation.</p>
           </div>
         </div>
-        <div className="section-image">Image Placeholder</div>
+        <div className="section-image3"></div>
       </section>
 
       <section>
@@ -76,7 +76,7 @@ const ReproductiveHealth = () => {
             <li className="fancy-bullet">Reducing stress levels and improving mood.</li>
           </ul>
         </div>
-        <div className="section-image">Image Placeholder</div>
+        <div className="section-image4"></div>
       </section>
 
       <section>
@@ -91,7 +91,7 @@ const ReproductiveHealth = () => {
             <li className="fancy-bullet">Maintaining a positive body image and self-esteem.</li>
           </ul>
         </div>
-        <div className="section-image">Image Placeholder</div>
+        <div className="section-image5"></div>
       </section>
     </div>
   );

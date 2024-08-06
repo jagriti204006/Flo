@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Calendar } from 'primereact/calendar';
 import dayjs from 'dayjs';
 import isBetween from 'dayjs/plugin/isBetween';
+import './Calendar.css';
 
 dayjs.extend(isBetween);
 

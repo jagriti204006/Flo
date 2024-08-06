@@ -59,7 +59,7 @@ function Layout() {
           <ul className="flex justify-end items-center space-x-2 py-4">
             {[
               { to: "/", label: "Home" },
-              { to: "/about", label: "About" },
+              // { to: "/about", label: "About" },
               { to: "/calendar", label: "Calendar" },
               { to: "/reproductive-health", label: "Reproductive Health" },
               { to: "/information", label: "Information" },
