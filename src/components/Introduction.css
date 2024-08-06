@@ -6,21 +6,16 @@
   line-height: 1.6;
   padding: 20px;
   background-color: #f9f9f9;
-  max-width: 1200px;
   margin: 0 auto;
 }
 .first-screen{
-  background-image: url("D:\SUMMER\Flo\src\images\intro-1-new.png");
+  background-image: url("../../src/images/intro-1-new.png");
   background-size: cover; /* Ensures the image covers the entire background */
   background-repeat: no-repeat; /* Prevents the image from repeating */
   background-position: center center; /* Centers the image */
-  height: 100vh; /* Full viewport height */
-  width: 100vw; /* Full viewport width */
-   /* Keeps the image fixed in place */
-  top: 0;
-  margin-top: 0px;
-  margin-left: 0px;
-  left: 0;
+  width: 100%;
+  height: 100vh;
+
 }
 .hero-section {
   background-image: url("D:\SUMMER\Flo\src\images\intro-1-new.png");
@@ -28,7 +23,6 @@
   background-repeat: no-repeat; /* Prevents the image from repeating */
   background-position: center center; /* Centers the image */
 
-  height: 400px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -78,14 +72,21 @@
   color: #777;
 }
 
+.rounded-heading{
+  padding: 30px;
+  background-color: aliceblue;
+  border: 1px solid black;
+  border-radius: 50%;
+}
+
 .placard-section {
-  background: white;
+  background: rgb(255, 245, 227);
   padding: 20px;
   margin: 40px 0;
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   position: relative;
-  height: 500px;
+  height: 600px;
 }
 
 .placard-section h2 {
@@ -114,7 +115,7 @@
 .placard {
   position: absolute;
   top: 50%;
-  left: 50%;
+  left: 45%;
   background: #e0f7fa;
   padding: 10px 20px;
   border-radius: 8px;
@@ -132,6 +133,9 @@
 .placard:nth-child(5) { animation-delay: -10s; }
 .placard:nth-child(6) { animation-delay: -12.5s; }
 .placard:nth-child(7) { animation-delay: -15s; }
+.placard:nth-child(8) { animation-delay: -20s; }
+.placard:nth-child(9) { animation-delay: -25s; }
+.placard:nth-child(10) { animation-delay: -30s; }
 
 .carousel-section {
   background: white;
@@ -141,16 +145,19 @@
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.carousel-section h2 {
+.myH2 {
   font-size: 2rem;
   margin-bottom: 20px;
+  color: #333;
+  text-align: center;
 }
 
 .carousel {
   display: flex;
   overflow-x: auto;
-  gap: 10px;
+  gap: 15px;
   padding: 10px 0;
+  scroll-behavior: smooth;
 }
 
 .carousel-item {
@@ -158,11 +165,19 @@
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  min-width: 200px;
+  min-width: 250px;
   flex: 0 0 auto;
-  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .carousel-item:hover {
   transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.carousel-item p {
+  margin: 0;
+  font-size: 1rem;
+  color: #555;
+  text-align: center;
 }

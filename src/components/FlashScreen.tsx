@@ -16,7 +16,7 @@ const FlashScreen: React.FC<FlashScreenProps> = ({ onFlashEnd }) => {
 
   return (
     <div className="flash-screen">
-      <h1>Cheer Up Girl</h1>
+      <h1>🎀 Cheer Up Girl 🎀</h1>
     </div>
   );
 };

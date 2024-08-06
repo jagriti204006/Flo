@@ -1,83 +1,9 @@
-/* @keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
-  }
-  
-  @keyframes scaleUp {
-    from { transform: scale(0.8); }
-    to { transform: scale(1); }
-  }
-  
-  .flash-screen {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 100%);
-    font-family: 'Arial', sans-serif;
-    overflow: hidden;
-  }
-  
-  .flash-screen h1 {
-    font-size: 3rem;
-    color: #ffffff;
-    text-align: center;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
-    animation: fadeIn 1s ease-out, scaleUp 1s ease-out;
-  }
-  
-  .flash-screen::before {
-    content: '';
-    position: absolute;
-    top: -50%;
-    left: -50%;
-    width: 200%;
-    height: 200%;
-    background: radial-gradient(circle, rgba(255,255,255,0.2) 0%, rgba(255,255,255,0) 70%);
-    animation: rotate 20s linear infinite;
-  }
-  
-  @keyframes rotate {
-    from { transform: rotate(0deg); }
-    to { transform: rotate(360deg); }
-  }
-  
-  .flash-screen::after {
-    content: '❤️';
-    position: absolute;
-    font-size: 2rem;
-    opacity: 0.7;
-    animation: float 3s ease-in-out infinite;
-  }
-  
-  @keyframes float {
-    0% { transform: translateY(0px); }
-    50% { transform: translateY(-20px); }
-    100% { transform: translateY(0px); }
-  }
-  
-  @media (max-width: 768px) {
-    .flash-screen h1 {
-      font-size: 2rem;
-    }
-  } */
-
-
-
-
-
-
-
-  /* FlashScreen.css */
-
 body {
   margin: 0;
   padding: 0;
   font-family: 'Arial', sans-serif;
   background-color: #ffffff;
-  }
-
-
+}
 
 .flash-screen {
   display: flex;
@@ -85,7 +11,6 @@ body {
   align-items: center;
   height: 100vh;
   background-image: url("D:\SUMMER\Flo\src\images\flash2.jpg");
- 
   background-size: cover; /* Ensures the image covers the entire background */
   background-repeat: no-repeat; /* Prevents the image from repeating */
   background-position: center center; /* Centers the image */
@@ -94,13 +19,28 @@ body {
   animation: fadeIn 1s ease-in-out, fadeOut 1s ease-in-out 2s;
 }
 
+
+.button-33:hover {
+  box-shadow: rgba(44,187,99,.35) 0 -25px 18px -14px inset,rgba(44,187,99,.25) 0 1px 2px,rgba(44,187,99,.25) 0 2px 4px,rgba(44,187,99,.25) 0 4px 8px,rgba(44,187,99,.25) 0 8px 16px,rgba(44,187,99,.25) 0 16px 32px;
+  transform: scale(1.05) rotate(-1deg);
+}
+
 .flash-screen h1 {
-  font-size: 2.5em;
-  margin: 0;
-  color:#ec1073 ;
-  padding: 20px;
-  background: rgba(0, 0, 0, 0.8);
-  border-radius: 10px;
+  background-color: #fbc2f7;
+  border-radius: 100px;
+  box-shadow: rgba(170, 44, 187, 0.2) 0 -25px 18px -14px inset,rgba(185, 44, 187, 0.15) 0 1px 2px,rgba(187, 44, 156, 0.15) 0 2px 4px,rgba(187, 44, 180, 0.15) 0 4px 8px,rgba(187, 44, 175, 0.15) 0 8px 16px,rgba(187, 44, 132, 0.15) 0 16px 32px;
+  color: rgb(64, 0, 47);
+  cursor: pointer;
+  display: inline-block;
+  padding: 21px 40px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 250ms;
+  border: 0;
+  font-size: 48px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
 }
 
 @keyframes fadeIn {

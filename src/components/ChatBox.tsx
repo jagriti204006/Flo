@@ -27,6 +27,7 @@ const ChatBox: React.FC = () => {
   };
 
   const handleSendMessage = async () => {
+// sourcery skip: use-braces
     if (inputText.trim() === '') return;
 
     const newUserMessage: Message = { text: inputText, isUser: true };

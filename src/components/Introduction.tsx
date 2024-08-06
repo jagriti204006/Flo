@@ -5,10 +5,10 @@ const Introduction: React.FC = () => {
   return (
     <div className="entire-body">
     <div className="first-screen">
-        
+
       </div>
     <div className="introduction-page">
-      
+
       <div className="hero-section">
         <h1>What is Periods?</h1>
       </div>
@@ -24,9 +24,9 @@ const Introduction: React.FC = () => {
       </section>
 
       <section className="placard-section">
-        <h2>Signs and Symptoms</h2>
+        <h2 className="rounded-heading">Signs & <br></br> Symptoms</h2>
         <div className="placard-container">
-          {['Abdominal cramps', 'Bloating', 'Breast tenderness', 'Fatigue', 'Mood swings', 'Headaches', 'Back pain'].map((symptom, index) => (
+          {['Cramps', 'Bloating', 'Tenderness', 'Fatigue', 'Mood', 'Headaches', 'Nausea', 'Vomiting', 'Constipation', 'Cramps'].map((symptom, index) => (
             <div key={index} className="placard">
               {symptom}
             </div>
@@ -51,8 +51,10 @@ const Introduction: React.FC = () => {
         </div>
       </section>
 
+
+
+      <h2 className='myH2'>Breaking the Taboos</h2>
       <section className="carousel-section">
-        <h2>Breaking the Taboos</h2>
         <div className="carousel">
           <div className="carousel-item">
             <p>Menstruation is a normal and natural part of life, yet many cultures still view it as a taboo subject.</p>

@@ -5,7 +5,7 @@ const ReproductiveHealth = () => {
   return (
     <div className="reproductive-health">
       <h1 className="text-2xl font-bold">Reproductive Health</h1>
-      
+
       <section>
         <div className="section-content">
           <h2 className="text-xl font-semibold">Cleanliness</h2>
@@ -13,15 +13,15 @@ const ReproductiveHealth = () => {
             Maintaining cleanliness is crucial for reproductive health. This includes:
           </p>
           <ul>
-            <li>Regular washing of the genital area with mild soap and water.</li>
-            <li>Changing sanitary products frequently during menstruation.</li>
-            <li>Wearing clean, breathable underwear to prevent infections.</li>
-            <li>Avoiding the use of harsh chemicals or douches that can disrupt the natural balance.</li>
+            <li className="fancy-bullet">Regular washing of the genital area with mild soap and water.</li>
+            <li className="fancy-bullet">Changing sanitary products frequently during menstruation.</li>
+            <li className="fancy-bullet">Wearing clean, breathable underwear to prevent infections.</li>
+            <li className="fancy-bullet">Avoiding the use of harsh chemicals or douches that can disrupt the natural balance.</li>
           </ul>
         </div>
         <div className="section-image">Image Placeholder</div>
       </section>
-      
+
       <section>
         <div className="section-content">
           <h2 className="text-xl font-semibold">Hygiene</h2>
@@ -37,7 +37,7 @@ const ReproductiveHealth = () => {
         </div>
         <div className="section-image">Image Placeholder</div>
       </section>
-      
+
       <section>
         <div className="section-content">
           <h2 className="text-xl font-semibold">Nutrition</h2>
@@ -63,7 +63,7 @@ const ReproductiveHealth = () => {
         </div>
         <div className="section-image">Image Placeholder</div>
       </section>
-      
+
       <section>
         <div className="section-content">
           <h2 className="text-xl font-semibold">Exercise</h2>
@@ -71,14 +71,14 @@ const ReproductiveHealth = () => {
             Regular physical activity is beneficial for reproductive health. Benefits include:
           </p>
           <ul>
-            <li>Improving blood circulation and reducing menstrual cramps.</li>
-            <li>Helping to maintain a healthy weight, which is crucial for hormone balance.</li>
-            <li>Reducing stress levels and improving mood.</li>
+            <li className="fancy-bullet">Improving blood circulation and reducing menstrual cramps.</li>
+            <li className="fancy-bullet">Helping to maintain a healthy weight, which is crucial for hormone balance.</li>
+            <li className="fancy-bullet">Reducing stress levels and improving mood.</li>
           </ul>
         </div>
         <div className="section-image">Image Placeholder</div>
       </section>
-      
+
       <section>
         <div className="section-content">
           <h2 className="text-xl font-semibold">Mental Health</h2>
@@ -86,9 +86,9 @@ const ReproductiveHealth = () => {
             Mental health is closely linked to reproductive health. Tips for maintaining good mental health include:
           </p>
           <ul>
-            <li>Managing stress through relaxation techniques like meditation and yoga.</li>
-            <li>Seeking support from friends, family, or mental health professionals when needed.</li>
-            <li>Maintaining a positive body image and self-esteem.</li>
+            <li className="fancy-bullet">Managing stress through relaxation techniques like meditation and yoga.</li>
+            <li className="fancy-bullet">Seeking support from friends, family, or mental health professionals when needed.</li>
+            <li className="fancy-bullet">Maintaining a positive body image and self-esteem.</li>
           </ul>
         </div>
         <div className="section-image">Image Placeholder</div>

@@ -69,9 +69,9 @@ function Layout() {
               <li key={link.to}>
                 <Link
                   to={link.to}
-                  className={`px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200 ease-in-out
+                  className={`px-3 py-2 rounded-md text-sm font-medium duration-200 ease-in-out
                     ${location.pathname === link.to
-                      ? 'bg-indigo-600 text-white'
+                      ? 'text-white'
                       : 'text-gray-300 hover:bg-gray-700 hover:text-white'
                     }`}
                 >

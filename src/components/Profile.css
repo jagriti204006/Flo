@@ -6,14 +6,14 @@
     font-family: 'Arial', sans-serif;
     color: #333;
   }
-  
+
   h1 {
     text-align: center;
     color: #ff69b4;
     margin-bottom: 30px;
     font-size: 2.5em;
   }
-  
+
   .profile-form {
     background-color: #fff;
     border-radius: 15px;
@@ -22,7 +22,7 @@
     display: flex;
     flex-wrap: wrap;
   }
-  
+
   .profile-picture-section {
     flex: 1;
     display: flex;
@@ -30,7 +30,7 @@
     align-items: center;
     margin-right: 30px;
   }
-  
+
   .profile-picture {
     width: 200px;
     height: 200px;
@@ -39,7 +39,7 @@
     border: 5px solid #ff69b4;
     margin-bottom: 20px;
   }
-  
+
   .upload-button {
     background-color: #ff69b4;
     color: white;
@@ -48,26 +48,26 @@
     cursor: pointer;
     transition: background-color 0.3s ease;
   }
-  
+
   .upload-button:hover {
     background-color: #ff1493;
   }
-  
+
   .profile-details {
     flex: 2;
   }
-  
+
   .form-group {
     margin-bottom: 20px;
   }
-  
+
   label {
     display: block;
     margin-bottom: 5px;
     color: #666;
     font-weight: bold;
   }
-  
+
   input[type="text"],
   input[type="email"],
   input[type="date"] {
@@ -78,14 +78,14 @@
     font-size: 16px;
     transition: border-color 0.3s ease;
   }
-  
+
   input[type="text"]:focus,
   input[type="email"]:focus,
   input[type="date"]:focus {
     border-color: #ff69b4;
     outline: none;
   }
-  
+
   .save-button {
     display: block;
     width: 100%;
@@ -99,16 +99,16 @@
     transition: background-color 0.3s ease;
     margin-top: 20px;
   }
-  
+
   .save-button:hover {
     background-color: #ff1493;
   }
-  
+
   @media (max-width: 768px) {
     .profile-form {
       flex-direction: column;
     }
-  
+
     .profile-picture-section {
       margin-right: 0;
       margin-bottom: 30px;
@@ -127,14 +127,14 @@
     font-family: 'Arial', sans-serif;
     color: #333;
   }
-  
+
   h1 {
     text-align: center;
     color: #ff69b4;
     margin-bottom: 30px;
     font-size: 2.5em;
   }
-  
+
   .profile-form {
     background-color: #fff;
     border-radius: 15px;
@@ -143,7 +143,7 @@
     display: flex;
     flex-wrap: wrap;
   }
-  
+
   .profile-picture-section {
     flex: 1;
     display: flex;
@@ -151,7 +151,7 @@
     align-items: center;
     margin-right: 30px;
   }
-  
+
   .profile-picture {
     width: 200px;
     height: 200px;
@@ -160,7 +160,7 @@
     border: 5px solid #ff69b4;
     margin-bottom: 20px;
   }
-  
+
   .upload-button {
     background-color: #ff69b4;
     color: white;
@@ -169,26 +169,26 @@
     cursor: pointer;
     transition: background-color 0.3s ease;
   }
-  
+
   .upload-button:hover {
     background-color: #ff1493;
   }
-  
+
   .profile-details {
     flex: 2;
   }
-  
+
   .form-group {
     margin-bottom: 20px;
   }
-  
+
   label {
     display: block;
     margin-bottom: 5px;
     color: #666;
     font-weight: bold;
   }
-  
+
   input[type="text"],
   input[type="email"],
   input[type="date"],
@@ -200,25 +200,25 @@
     font-size: 16px;
     transition: border-color 0.3s ease;
   }
-  
+
   input[type="text"]:focus,
   input[type="email"]:focus,
   input[type="date"]:focus {
     border-color: #ff69b4;
     outline: none;
   }
-  
+
   .info-box {
     background-color: #f9f9f9;
     border: 1px solid #e0e0e0;
     color: #333;
   }
-  
+
   .button-group {
     width: 100%;
     margin-top: 20px;
   }
-  
+
   .save-button,
   .edit-button {
     display: block;
@@ -231,28 +231,28 @@
     cursor: pointer;
     transition: background-color 0.3s ease;
   }
-  
+
   .save-button {
     background-color: #ff69b4;
   }
-  
+
   .save-button:hover {
     background-color: #ff1493;
   }
-  
+
   .edit-button {
     background-color: #4CAF50;
   }
-  
+
   .edit-button:hover {
     background-color: #45a049;
   }
-  
+
   @media (max-width: 768px) {
     .profile-form {
       flex-direction: column;
     }
-  
+
     .profile-picture-section {
       margin-right: 0;
       margin-bottom: 30px;

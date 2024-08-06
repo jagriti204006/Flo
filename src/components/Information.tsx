@@ -10,10 +10,8 @@ const Information = ({ userId }: { userId: string }) => {
 
   return (
     <div className="p-5">
-      <h1 className="text-2xl font-bold mb-4">Information</h1>
-      <p className="mb-4">FAQs</p>
+      <h1 className="text-2xl font-bold mb-4">Chat With Us</h1>
       <ChatBox/>
-      <p className="mb-4">Talk to expert/Anonymous talk with</p>
       <Routes>
         <Route path="quiz" element={<Quiz userId={userId} />} />
         <Route path="quiz/summary" element={<QuizSummary answers={answers} />} />
