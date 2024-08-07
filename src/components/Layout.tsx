@@ -112,7 +112,6 @@ const Layout: React.FC<LayoutProps> = ({ user }) => {
             <ul className="flex items-center space-x-2">
               {[
                 { to: "/", label: "Home" },
-                { to: "/about", label: "About" },
                 { to: "/calendar", label: "Calendar" },
                 { to: "/reproductive-health", label: "Reproductive Health" },
                 { to: "/information", label: "Information" },
