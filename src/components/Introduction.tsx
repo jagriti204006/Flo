@@ -10,7 +10,7 @@ const Introduction: React.FC = () => {
     <div className="introduction-page">
 
       <div className="hero-section">
-        <h1>WHAT IS PERIODS ?</h1>
+        <h1>WHAT ARE PERIODS ?</h1>
       </div>
 
       <section className="content-section">
