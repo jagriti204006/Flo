@@ -1,5 +1,143 @@
-body{
-    background-image: url("D:\SUMMER\Flo - New\Flo\src\images\flash2.jpg");
-    opacity: 1;
-}
+.calendar-container {
+    font-family: Arial, sans-serif;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1 {
+    text-align: center;
+    color: #ff69b4;
+  }
+  
+  .calendar-controls {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .calendar-navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  .calendar-navigation h2 {
+    margin: 0;
+    color: #1e90ff;
+  }
+  
+  .p-calendar {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  .p-datepicker {
+    width: 100% !important;
+  }
+  
+  .p-datepicker table {
+    font-size: 1em;
+  }
+  
+  .p-datepicker table td {
+    padding: 0.5em;
+  }
+  
+  .custom-day {
+    width: 2em;
+    height: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  .period-day {
+    background-color: #ff9999;
+    color: white;
+  }
+  
+  .ovulation-day {
+    background-color: #99ccff;
+    color: white;
+  }
+  
+  .cycle-settings {
+    width: 100%;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+  }
+  
+  .cycle-settings h3 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    color: #666;
+  }
+  
+  .cycle-settings label {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    color: #666;
+  }
+  
+  .p-dropdown {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  
+  .legend {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    background-color: #090707;
+  }
+  
+  .legend-item {
+    display: flex;
+    align-items: center;
+    margin: 0 10px;
+    
 
+  }
+  
+  .legend-color {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-right: 5px;
+    
+  }
+  
+  .legend-color.period-day {
+    background-color: #ff9999;
+  }
+  
+  .legend-color.ovulation-day {
+    background-color: #99ccff;
+  }
+  
+  /* Responsive design */
+  @media (max-width: 768px) {
+    .calendar-container {
+      max-width: 95%;
+    }
+  
+    .calendar-navigation {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .calendar-navigation h2 {
+      margin: 10px 0;
+    }
+  }
