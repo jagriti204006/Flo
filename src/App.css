@@ -17,7 +17,7 @@ body {
 }
 
 .container {
-  max-width: 1200px;
+  /* max-width: 1200px; */
   margin: 0 auto;
   padding: 2rem;
 }
@@ -99,7 +99,7 @@ footer {
 
 /* LoginRegister Component */
 .login-register {
-  max-width: 400px;
+  /* max-width: 400px; */
   margin: 2rem auto;
   padding: 2rem;
   background-color: var(--card-background);

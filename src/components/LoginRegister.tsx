@@ -64,12 +64,14 @@
 import React, { useState, ChangeEvent, FormEvent } from 'react';
 import axios from 'axios';
 import './LoginRegister.css';
+import { useNavigate } from 'react-router-dom';
 
 interface LoginRegisterProps {
   onLogin: (token: string, user: { fullName: string; username: string; profilePicture: string }) => void;
 }
 
 const LoginRegister: React.FC<LoginRegisterProps> = ({ onLogin }) => {
+// const LoginRegister: React.FC = () => {
   const [isLogin, setIsLogin] = useState(true);
   const [formData, setFormData] = useState({
     email: '',
@@ -84,6 +86,7 @@ const LoginRegister: React.FC<LoginRegisterProps> = ({ onLogin }) => {
   };
 
   const handleSubmit = async (e: FormEvent) => {
+    // const navigate = useNavigate();
     e.preventDefault();
     const url = isLogin ? 'http://localhost:6969/api/login' : 'http://localhost:6969/api/register';
     try {
@@ -92,6 +95,7 @@ const LoginRegister: React.FC<LoginRegisterProps> = ({ onLogin }) => {
       if (isLogin) {
         onLogin(response.data.token, response.data.user);
         localStorage.setItem('token', response.data.token);
+      // navigate('/');
       } else {
         alert('Registration successful. Please log in.');
         setIsLogin(true);

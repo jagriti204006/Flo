@@ -285,6 +285,8 @@
 // };
 
 // export default Profile;
+
+
 import React from 'react';
 import './Profile.css';
 
@@ -295,30 +297,32 @@ interface UserProfile {
 }
 
 interface ProfileProps {
-  user: { fullName: string; username: string; profilePicture: string } | null;
+  user: UserProfile | null;
 }
 
 const Profile: React.FC<ProfileProps> = ({ user }) => {
+  if (!user) {
+    return <div className="profile-container">Loading user data...</div>;
+  }
+
   return (
     <div className="profile-container">
       <h1>My Profile</h1>
-      {user && (
-        <div className="profile-form">
-          <div className="profile-picture-section">
-            <img src={user.profilePicture} alt="Profile" className="profile-picture" />
+      <div className="profile-form">
+        <div className="profile-picture-section">
+          <img src={user.profilePicture} alt="Profile" className="profile-picture" />
+        </div>
+        <div className="profile-details">
+          <div className="form-group">
+            <label htmlFor="fullName">Full Name</label>
+            <div className="info-box">{user.fullName}</div>
           </div>
-          <div className="profile-details">
-            <div className="form-group">
-              <label htmlFor="fullName">Full Name</label>
-              <div className="info-box">{user.fullName}</div>
-            </div>
-            <div className="form-group">
-              <label htmlFor="username">Username</label>
-              <div className="info-box">{user.username}</div>
-            </div>
+          <div className="form-group">
+            <label htmlFor="username">Username</label>
+            <div className="info-box">{user.username}</div>
           </div>
         </div>
-      )}
+      </div>
     </div>
   );
 };

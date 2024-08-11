@@ -8,34 +8,40 @@
   background-color: #f9f9f9;
   margin: 0 auto;
 }
-.first-screen{
+
+.first-screen {
   background-image: url("../../src/images/intro-1-new.png");
-  background-size: cover; /* Ensures the image covers the entire background */
-  background-repeat: no-repeat; /* Prevents the image from repeating */
-  background-position: center center; /* Centers the image */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
   width: 100%;
   height: 100vh;
-
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.hero-section {
-  background-image: url("D:\SUMMER\Flo\src\images\intro-1-new.png");
-  background-size: cover; /* Ensures the image covers the entire background */
-  background-repeat: no-repeat; /* Prevents the image from repeating */
-  background-position: center center; /* Centers the image */
 
+.intro-image {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+}
+
+.hero-section {
+  background-color: #ffebee;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: white;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  color: #333;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
   margin-bottom: 40px;
+  padding: 40px 0;
 }
 
 .hero-section h1 {
   font-size: 4rem;
-  margin-top: 20px;
-  margin-bottom: 0;
-  font-style: bold;
+  margin: 0;
+  font-weight: bold;
 }
 
 .content-section {
@@ -62,36 +68,37 @@
   flex: 1;
 }
 
-.content-image2{
+.content-image {
   flex: 1;
   max-width: 350px;
   height: 350px;
-  background-image: url("D:\SUMMER\Flo - New\Flo\src\images\home2.jpeg");
-  background-size: cover; /* Ensures the image covers the entire background */
-  background-repeat: no-repeat; /* Prevents the image from repeating */
-  background-position: center center; 
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1.2rem;
-  color: #777;
-}
-.content-image1 {
-  flex: 1;
-  max-width: 300px;
-  height: 200px;
-  background-image: url("D:\SUMMER\Flo - New\Flo\src\images\home1.jpeg");
-  background-size: cover; /* Ensures the image covers the entire background */
-  background-repeat: no-repeat; /* Prevents the image from repeating */
-  background-position: center center; 
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 1.2rem;
-  color: #777;
 }
 
-.rounded-heading{
+.content-image img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.content-image1 {
+  background-image: url("D:/SUMMER/Flo - New/Flo/src/images/home1.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.content-image2 {
+  background-image: url("D:/SUMMER/Flo - New/Flo/src/images/home2.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.rounded-heading {
   padding: 30px;
   background-color: aliceblue;
   border: 1px solid black;
@@ -99,9 +106,9 @@
 }
 
 .placard-section {
-  background-image: url("D:\SUMMER\Flo - New\Flo\src\images\flash2.jpg");
-  background-size: cover; /* Ensures the image covers the entire background */
-  background-repeat: no-repeat; /* Prevents the image from repeating */
+  background-image: url("D:/SUMMER/Flo - New/Flo/src/images/flash2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
   background-position: center center;
   opacity: 0.8;
   padding: 20px;
@@ -112,17 +119,19 @@
   height: 600px;
 }
 
-
-.image-break{
-  background-image: url("D:\SUMMER\Flo - New\Flo\src\images\breaking.jpg");
-  background-size: cover; /* Ensures the image covers the entire background */
-  background-repeat: no-repeat; /* Prevents the image from repeating */
+.image-break {
+  background-image: url("D:/SUMMER/Flo - New/Flo/src/images/breaking.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
   background-position: center center;
-  /* display: flex; */
-
-  width: 1200px;
-  height:600px;
+  width: 100%;
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
 }
+
 .placard-section h2 {
   font-size: 2rem;
   text-align: center;
@@ -134,8 +143,8 @@
 }
 
 .placard-container {
-  color:black;
-  font-style: bold;
+  color: black;
+  font-weight: bold;
   position: absolute;
   width: 100%;
   height: 100%;

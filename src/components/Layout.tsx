@@ -91,19 +91,34 @@
 
 // export default Layout;
 
-
-
-import React from 'react';
-import { Outlet, Link, useLocation } from 'react-router-dom';
+import React, { useEffect } from 'react';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import './Layout.css';
 
-interface LayoutProps {
-  user: { fullName: string; username: string; profilePicture: string } | null;
+interface User {
+  fullName: string;
+  username: string;
+  profilePicture: string;
 }
 
-const Layout: React.FC<LayoutProps> = ({ user }) => {
-  const location = useLocation();
+interface LayoutProps {
+  user: User | null;
+  onLogout: () => void;
+  children: React.ReactNode;
+}
 
+const Layout: React.FC<LayoutProps> = ({ user, onLogout, children }) => {
+  const location = useLocation();
+  const navigate = useNavigate();
+  useEffect(()=>{
+    const token = localStorage.getItem('token');
+    console.log('Token from localStorage:', token);
+
+    if (!token) {
+      
+      // navigate('/login');
+    } 
+  })
   return (
     <div className="bg-gray-900 min-h-screen font-poppins text-white">
       <header className="bg-gray-800 shadow-md">
@@ -112,6 +127,7 @@ const Layout: React.FC<LayoutProps> = ({ user }) => {
             <ul className="flex items-center space-x-2">
               {[
                 { to: "/", label: "Home" },
+                { to: "/introduction", label: "Introduction" },
                 { to: "/calendar", label: "Calendar" },
                 { to: "/reproductive-health", label: "Reproductive Health" },
                 { to: "/information", label: "Information" },
@@ -135,18 +151,19 @@ const Layout: React.FC<LayoutProps> = ({ user }) => {
             {user && (
               <div className="flex items-center space-x-2">
                 <img
-                  src={user.profilePicture}
-                  alt={user.fullName}
-                  className="w-8 h-8 rounded-full"
+                  // src={user.profilePicture}
+                  // alt={user.fullName}
+                  // className="w-8 h-8 rounded-full"
                 />
                 <span className="text-gray-300">{user.fullName}</span>
+                <button onClick={onLogout} className="text-gray-300 hover:text-white">Logout</button>
               </div>
             )}
           </div>
         </nav>
       </header>
       <main className="container mx-auto px-4 py-8">
-        <Outlet />
+        {children}
       </main>
     </div>
   );
