@@ -193,12 +193,13 @@ body {
 .login-register form {
   display: flex;
   flex-direction: column;
+  color: #000000;
 }
 
 .login-register input {
   margin-bottom: 15px;
   padding: 10px;
-  border: 1px solid #cccccc;
+  border: 1px solid #000000;
   border-radius: 4px;
   font-size: 14px;
 }
